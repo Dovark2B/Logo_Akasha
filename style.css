@@ -11,6 +11,7 @@ body {
 
 .logo-wrapper {
   position: relative;
+  top: 300px;
   width: 2000px;
   height: 2000px;
   stroke: gold;
