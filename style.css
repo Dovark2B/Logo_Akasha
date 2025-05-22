@@ -11,13 +11,35 @@ body {
 
 .logo-wrapper {
   position: relative;
-  top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 2000px;
   height: 2000px;
-  stroke: gold;
+  stroke: #c6a855;
   stroke-width: 4px;
   stroke-dasharray: 3000;
   stroke-dashoffset: 3000;
+  transform-style: preserve-3d;
+  transform-origin: center center;
 
 }
 
+@keyframes rotateY360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
